@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 TESTPATH="/content/drive/MyDrive/MVS/tankandtemples/advanced" 
-TESTLIST="../../lists/tnt/adv.txt"
+TESTLIST="/content/GoMVS/lists/tnt/adv.txt"
 NORMAL_PATH="highresTNT/" 												
 CKPT_FILE="/content/drive/MyDrive/MVS/GoMVS/GoMVS_tnt_adv.ckpt"
 OUTDIR="/content/drive/MyDrive/MVS/GoMVS/output"
