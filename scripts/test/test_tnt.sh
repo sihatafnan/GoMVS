@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-TESTPATH="datasets/tanks/tankandtemples/advanced" # path to dataset
-TESTLIST="lists/tnt/adv.txt"
+TESTPATH="/content/drive/MyDrive/MVS/tankandtemples/advanced" 
+TESTLIST="../../lists/tnt/adv.txt"
 NORMAL_PATH="highresTNT/" 												
-CKPT_FILE="./outputs/bld_finetune/model_000012.ckpt" 		    # path to checkpoint
-OUTDIR="outputs/tnt_testing/" 									# path to save the results
+CKPT_FILE="/content/drive/MyDrive/MVS/GoMVS/GoMVS_tnt_adv.ckpt"
+OUTDIR="/content/drive/MyDrive/MVS/GoMVS/output"
 if [ ! -d $OUTDIR ]; then
 	mkdir -p $OUTDIR
 fi
 
-CUDA_VISIBLE_DEVICES=0 python test.py \
+CUDA_VISIBLE_DEVICES=0 python /content/GoMVS/test.py \
 --dataset=tnt_eval \
---num_view=11 \
+--num_view=8 \
 --batch_size=1 \
 --normalpath=$NORMAL_PATH \
 --interval_scale=1.0 \
